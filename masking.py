@@ -5,7 +5,7 @@ from PIL import Image
 import argparse
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="MNIST")
+    parser = argparse.ArgumentParser(description="Yolov3-tiny")
     parser.add_argument('--data_dir', dest='data_dir', help="data directory",
                         default=None, type=str)
     parser.add_argument("--imgset", dest='imgset', help='imageset',
