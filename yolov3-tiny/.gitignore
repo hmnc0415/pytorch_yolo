@@ -11,3 +11,10 @@ pretrained/
 __pycache__/
 *.npy
 *.dll
+
+datasets/Annotations/*
+datasets/JPEGImages/*
+datasets/ImageSets/*
+output/*
+
+.DS_Store
