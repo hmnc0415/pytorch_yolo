@@ -12,9 +12,14 @@ __pycache__/
 *.npy
 *.dll
 
-datasets/Annotations/*
-datasets/JPEGImages/*
-datasets/ImageSets/*
+datasets_train/Annotations/*
+datasets_train/JPEGImages/*
+datasets_train/ImageSets/*
+
+datasets_eval/Annotations/*
+datasets_eval/JPEGImages/*
+datasets_eval/ImageSets/*
+
 output/*
 
 .DS_Store

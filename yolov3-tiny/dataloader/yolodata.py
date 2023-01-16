@@ -12,10 +12,10 @@ class Yolodata(Dataset):
     file_dir = ""
     anno_dir = ""
     file_txt = ""
-    train_dir = "C:\\data\\tstl_data"
-    train_txt = "all.txt"
-    valid_dir = "C:\\data\\tstl_eval"
-    valid_txt = "all.txt"
+    train_dir = "./datasets_train/"
+    train_txt = "train.txt"
+    valid_dir = "./datasets_eval/"
+    valid_txt = "eval.txt"
     class_str = ['left', 'right', 'stop', 'crosswalk', 'uturn', 'traffic_light']
     num_class = None
     img_data = []
@@ -25,13 +25,13 @@ class Yolodata(Dataset):
         self.transform = transform
         self.num_class = cfg_param['class']
         if self.is_train:
-            self.file_dir = self.train_dir+"\\JPEGImages\\"
-            self.file_txt = self.train_dir+"\\ImageSets\\"+self.train_txt
-            self.anno_dir = self.train_dir+"\\Annotations\\"
+            self.file_dir = self.train_dir+"/JPEGImages/"
+            self.file_txt = self.train_dir+"/ImageSets/"+self.train_txt
+            self.anno_dir = self.train_dir+"/Annotations/"
         else:
-            self.file_dir = self.valid_dir+"\\JPEGImages\\"
-            self.file_txt = self.valid_dir+"\\ImageSets\\"+self.valid_txt
-            self.anno_dir = self.valid_dir+"\\Annotations\\"
+            self.file_dir = self.valid_dir+"/JPEGImages/"
+            self.file_txt = self.valid_dir+"/ImageSets/"+self.valid_txt
+            self.anno_dir = self.valid_dir+"/Annotations/"
 
         img_names = []
         img_data = []
