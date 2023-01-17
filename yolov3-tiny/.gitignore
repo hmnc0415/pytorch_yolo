@@ -16,6 +16,10 @@ datasets_train/Annotations/*
 datasets_train/JPEGImages/*
 datasets_train/ImageSets/*
 
+datasets_train/[V1]Annotations/*
+datasets_train/[V1]JPEGImages/*
+datasets_train/JPEGImages2/*
+
 datasets_eval/Annotations/*
 datasets_eval/JPEGImages/*
 datasets_eval/ImageSets/*
