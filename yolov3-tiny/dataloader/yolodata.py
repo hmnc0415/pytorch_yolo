@@ -16,7 +16,7 @@ class Yolodata(Dataset):
     train_txt = "train.txt"
     valid_dir = "./datasets_eval/"
     valid_txt = "eval.txt"
-    class_str = ['left', 'right', 'stop', 'crosswalk', 'traffic_light']
+    class_str = ['left', 'right', 'stop', 'crosswalk', 'uturn', 'traffic_light']
     num_class = None
     img_data = []
     def __init__(self, is_train=True, transform=None, cfg_param=None):
